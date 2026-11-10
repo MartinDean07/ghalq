@@ -1,4 +1,4 @@
-package com.martdean.cutoff.data
+package com.martdean.ghalq.data
 
 import android.content.Context
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -17,7 +17,7 @@ class BlockStore private constructor(context: Context) {
     val blocked: StateFlow<Set<String>> = _blocked.asStateFlow()
 
     private val _enabled = MutableStateFlow(prefs.getBoolean(KEY_ENABLED, false))
-    /** What the user asked for. Whether the tunnel is actually up lives in [com.martdean.cutoff.vpn.TunnelState]. */
+    /** What the user asked for. Whether the tunnel is actually up lives in [com.martdean.ghalq.vpn.TunnelState]. */
     val enabled: StateFlow<Boolean> = _enabled.asStateFlow()
 
     @Synchronized
@@ -34,7 +34,7 @@ class BlockStore private constructor(context: Context) {
     }
 
     companion object {
-        private const val PREFS = "cutoff"
+        private const val PREFS = "ghalq"
         private const val KEY_BLOCKED = "blocked_packages"
         private const val KEY_ENABLED = "enabled"
 

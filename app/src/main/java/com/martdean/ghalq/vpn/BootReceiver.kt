@@ -1,9 +1,9 @@
-package com.martdean.cutoff.vpn
+package com.martdean.ghalq.vpn
 
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import com.martdean.cutoff.data.BlockStore
+import com.martdean.ghalq.data.BlockStore
 
 /** Restores blocking after a reboot or an app update if it was on before. */
 class BootReceiver : BroadcastReceiver() {

@@ -1,7 +1,7 @@
-package com.martdean.cutoff.vpn
+package com.martdean.ghalq.vpn
 
 /**
- * Minimal IPv4/IPv6 header reader. Cutoff never forwards packets; it only looks at the
+ * Minimal IPv4/IPv6 header reader. Ghalq never forwards packets; it only looks at the
  * headers to count how often a blocked app tries to connect.
  */
 object PacketInspector {

@@ -1,13 +1,13 @@
-package com.martdean.cutoff.ui
+package com.martdean.ghalq.ui
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import com.martdean.cutoff.data.AppInfo
-import com.martdean.cutoff.data.AppRepository
-import com.martdean.cutoff.data.BlockStore
-import com.martdean.cutoff.vpn.TunnelState
-import com.martdean.cutoff.vpn.VpnController
+import com.martdean.ghalq.data.AppInfo
+import com.martdean.ghalq.data.AppRepository
+import com.martdean.ghalq.data.BlockStore
+import com.martdean.ghalq.vpn.TunnelState
+import com.martdean.ghalq.vpn.VpnController
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted

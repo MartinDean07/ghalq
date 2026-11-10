@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.martdean.cutoff"
+    namespace = "com.martdean.ghalq"
     compileSdk = 37
 
     defaultConfig {
-        applicationId = "com.martdean.cutoff"
+        applicationId = "com.martdean.ghalq"
         minSdk = 26
         targetSdk = 36
         versionCode = 1

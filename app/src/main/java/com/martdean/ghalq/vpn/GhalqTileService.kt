@@ -1,16 +1,16 @@
-package com.martdean.cutoff.vpn
+package com.martdean.ghalq.vpn
 
 import android.app.PendingIntent
 import android.content.Intent
 import android.os.Build
 import android.service.quicksettings.Tile
 import android.service.quicksettings.TileService
-import com.martdean.cutoff.MainActivity
-import com.martdean.cutoff.R
-import com.martdean.cutoff.data.BlockStore
+import com.martdean.ghalq.MainActivity
+import com.martdean.ghalq.R
+import com.martdean.ghalq.data.BlockStore
 
 /** Quick Settings tile: one tap to switch blocking on or off. */
-class CutoffTileService : TileService() {
+class GhalqTileService : TileService() {
 
     override fun onStartListening() {
         super.onStartListening()

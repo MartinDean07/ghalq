@@ -1,12 +1,12 @@
-package com.martdean.cutoff
+package com.martdean.ghalq
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.SystemBarStyle
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import com.martdean.cutoff.ui.CutoffApp
-import com.martdean.cutoff.ui.theme.CutoffTheme
+import com.martdean.ghalq.ui.GhalqApp
+import com.martdean.ghalq.ui.theme.GhalqTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,8 +16,8 @@ class MainActivity : ComponentActivity() {
         )
         super.onCreate(savedInstanceState)
         setContent {
-            CutoffTheme {
-                CutoffApp()
+            GhalqTheme {
+                GhalqApp()
             }
         }
     }

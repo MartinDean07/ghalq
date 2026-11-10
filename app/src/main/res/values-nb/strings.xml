@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Cutoff</string>
+    <string name="app_name">Ghalq</string>
     <string name="title">Steng apper ute fra internett</string>
     <string name="subtitle">Velg appene som skal være frakoblet. Alt annet fungerer som vanlig.</string>
     <string name="status_on">Blokkerer</string>
@@ -14,7 +14,7 @@
     <string name="state_blocked">Frakoblet</string>
     <string name="state_allowed">Tillatt</string>
     <string name="row_cut_off">Frakoblet nå</string>
-    <string name="row_will_cut">Kobles fra når Cutoff er på</string>
+    <string name="row_will_cut">Kobles fra når Ghalq er på</string>
     <string name="row_no_internet">Bruker ikke internett</string>
     <string name="footer_pick">Velg apper som skal kobles fra</string>
     <string name="footer_on_sub">Trykk for å gi dem internett igjen</string>
@@ -24,16 +24,16 @@
     <string name="cd_about">Om appen og tips</string>
     <string name="cd_clear">Tøm søket</string>
     <string name="toast_pick_first">Velg minst én app først</string>
-    <string name="toast_consent_denied">Cutoff trenger VPN-tillatelse for å blokkere apper. Ingenting sendes noe sted.</string>
-    <string name="about_title">Slik fungerer Cutoff</string>
-    <string name="about_body">Cutoff starter en lokal VPN som bare appene du velger, sendes gjennom. Trafikken deres sendes aldri videre, så disse appene mister internett, mens alle andre apper bruker den vanlige tilkoblingen.</string>
+    <string name="toast_consent_denied">Ghalq trenger VPN-tillatelse for å blokkere apper. Ingenting sendes noe sted.</string>
+    <string name="about_title">Slik fungerer Ghalq</string>
+    <string name="about_body">Ghalq starter en lokal VPN som bare appene du velger, sendes gjennom. Trafikken deres sendes aldri videre, så disse appene mister internett, mens alle andre apper bruker den vanlige tilkoblingen.</string>
     <string name="about_tips">Tips</string>
-    <string name="tip_tile">Legg Cutoff-flisen til i hurtiginnstillingene for å slå blokkeringen av og på med ett trykk.</string>
-    <string name="tip_always_on">For at blokkeringen skal fortsette etter omstart, slår du på Alltid på-VPN for Cutoff i VPN-innstillingene.</string>
-    <string name="tip_one_vpn">Android tillater én VPN om gangen. Starter du en annen VPN, slås Cutoff av.</string>
+    <string name="tip_tile">Legg Ghalq-flisen til i hurtiginnstillingene for å slå blokkeringen av og på med ett trykk.</string>
+    <string name="tip_always_on">For at blokkeringen skal fortsette etter omstart, slår du på Alltid på-VPN for Ghalq i VPN-innstillingene.</string>
+    <string name="tip_one_vpn">Android tillater én VPN om gangen. Starter du en annen VPN, slås Ghalq av.</string>
     <string name="open_vpn_settings">Åpne VPN-innstillinger</string>
-    <string name="privacy_note">Personvern først: Cutoff har ingen internettillatelse, ingen konto, ingen analyse og ingen server. Valgene dine blir på telefonen.</string>
-    <string name="credit">Cutoff · designet og utviklet av Martin Dean</string>
+    <string name="privacy_note">Personvern først: Ghalq har ingen internettillatelse, ingen konto, ingen analyse og ingen server. Valgene dine blir på telefonen.</string>
+    <string name="credit">Ghalq · designet og utviklet av Martin Dean</string>
     <plurals name="tile_on">
         <item quantity="one">%1$s app av</item>
         <item quantity="other">%1$s apper av</item>

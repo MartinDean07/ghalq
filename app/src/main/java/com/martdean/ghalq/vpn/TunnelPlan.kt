@@ -1,4 +1,4 @@
-package com.martdean.cutoff.vpn
+package com.martdean.ghalq.vpn
 
 /**
  * Decides which packages go into the blackhole tunnel.

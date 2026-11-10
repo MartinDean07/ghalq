@@ -1,4 +1,4 @@
-package com.martdean.cutoff.vpn
+package com.martdean.ghalq.vpn
 
 import android.content.ComponentName
 import android.content.Context
@@ -45,7 +45,7 @@ object TunnelState {
     fun refreshTile(context: Context) {
         runCatching {
             TileService.requestListeningState(
-                context, ComponentName(context, CutoffTileService::class.java)
+                context, ComponentName(context, GhalqTileService::class.java)
             )
         }
     }

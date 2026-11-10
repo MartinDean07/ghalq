@@ -1,4 +1,4 @@
-package com.martdean.cutoff.vpn
+package com.martdean.ghalq.vpn
 
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse

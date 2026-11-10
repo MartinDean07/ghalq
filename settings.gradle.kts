@@ -20,5 +20,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Cutoff"
+rootProject.name = "Ghalq"
 include(":app")

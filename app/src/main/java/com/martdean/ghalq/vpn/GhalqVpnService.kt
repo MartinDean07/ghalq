@@ -1,4 +1,4 @@
-package com.martdean.cutoff.vpn
+package com.martdean.ghalq.vpn
 
 import android.app.PendingIntent
 import android.content.Intent
@@ -11,9 +11,9 @@ import android.system.ErrnoException
 import android.system.Os
 import android.system.OsConstants
 import android.system.StructPollfd
-import com.martdean.cutoff.MainActivity
-import com.martdean.cutoff.R
-import com.martdean.cutoff.data.BlockStore
+import com.martdean.ghalq.MainActivity
+import com.martdean.ghalq.R
+import com.martdean.ghalq.data.BlockStore
 import java.net.InetAddress
 import java.net.InetSocketAddress
 import kotlin.concurrent.thread
@@ -21,9 +21,9 @@ import kotlin.concurrent.thread
 /**
  * A local "blackhole" VPN. Only the selected apps are routed into the tunnel, and nothing
  * is ever written back, so those apps lose internet while every other app is untouched.
- * No packet leaves the phone through Cutoff.
+ * No packet leaves the phone through Ghalq.
  */
-class CutoffVpnService : VpnService() {
+class GhalqVpnService : VpnService() {
 
     private var tunnel: ParcelFileDescriptor? = null
     @Volatile private var generation = 0
@@ -87,7 +87,7 @@ class CutoffVpnService : VpnService() {
             null
         }
         if (fresh == null) {
-            // VPN consent was revoked; the user must open Cutoff and approve again.
+            // VPN consent was revoked; the user must open Ghalq and approve again.
             BlockStore.get(this).setEnabled(false)
             shutdown(); stopSelf(); return
         }
@@ -106,7 +106,7 @@ class CutoffVpnService : VpnService() {
         val seenFlows = object : LinkedHashMap<String, Unit>(256, 0.75f, true) {
             override fun removeEldestEntry(eldest: MutableMap.MutableEntry<String, Unit>?) = size > 512
         }
-        thread(name = "cutoff-sink-$gen", isDaemon = true) {
+        thread(name = "ghalq-sink-$gen", isDaemon = true) {
             val fd = pfd.fileDescriptor
             val buffer = ByteArray(32767)
             val pollFd = StructPollfd().apply {
@@ -176,7 +176,7 @@ class CutoffVpnService : VpnService() {
     }
 
     override fun onRevoke() {
-        // Another VPN took over, or the user disconnected Cutoff in Settings.
+        // Another VPN took over, or the user disconnected Ghalq in Settings.
         BlockStore.get(this).setEnabled(false)
         shutdown()
         stopSelf()
@@ -188,7 +188,7 @@ class CutoffVpnService : VpnService() {
     }
 
     companion object {
-        const val ACTION_APPLY = "com.martdean.cutoff.APPLY"
-        const val ACTION_STOP = "com.martdean.cutoff.STOP"
+        const val ACTION_APPLY = "com.martdean.ghalq.APPLY"
+        const val ACTION_STOP = "com.martdean.ghalq.STOP"
     }
 }

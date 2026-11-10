@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- Cutoff never opens a network connection itself, so INTERNET is not requested.
+    <!-- Ghalq never opens a network connection itself, so INTERNET is not requested.
          The system binds the VPN service (BIND_VPN_SERVICE), which keeps it alive and shows
          the VPN key icon; no extra foreground notification is needed. -->
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
@@ -20,7 +20,7 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Cutoff">
+        android:theme="@style/Theme.Ghalq">
 
         <activity
             android:name=".MainActivity"
@@ -33,7 +33,7 @@
         </activity>
 
         <service
-            android:name=".vpn.CutoffVpnService"
+            android:name=".vpn.GhalqVpnService"
             android:exported="false"
             android:permission="android.permission.BIND_VPN_SERVICE">
             <intent-filter>
@@ -45,7 +45,7 @@
         </service>
 
         <service
-            android:name=".vpn.CutoffTileService"
+            android:name=".vpn.GhalqTileService"
             android:exported="true"
             android:icon="@drawable/ic_tile"
             android:label="@string/app_name"

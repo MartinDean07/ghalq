@@ -1,4 +1,4 @@
-package com.martdean.cutoff.ui
+package com.martdean.ghalq.ui
 
 import android.app.Activity
 import android.content.Intent
@@ -81,14 +81,14 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.compose.LifecycleEventEffect
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.martdean.cutoff.R
-import com.martdean.cutoff.data.AppInfo
-import com.martdean.cutoff.data.AppRepository
-import com.martdean.cutoff.ui.theme.CutoffColors
-import com.martdean.cutoff.ui.theme.LocalTokens
+import com.martdean.ghalq.R
+import com.martdean.ghalq.data.AppInfo
+import com.martdean.ghalq.data.AppRepository
+import com.martdean.ghalq.ui.theme.GhalqColors
+import com.martdean.ghalq.ui.theme.LocalTokens
 
 @Composable
-fun CutoffApp(vm: MainViewModel = viewModel()) {
+fun GhalqApp(vm: MainViewModel = viewModel()) {
     val state by vm.state.collectAsStateWithLifecycle()
     val t = LocalTokens.current
     val context = LocalContext.current
@@ -99,7 +99,7 @@ fun CutoffApp(vm: MainViewModel = viewModel()) {
         else Toast.makeText(context, R.string.toast_consent_denied, Toast.LENGTH_LONG).show()
     }
 
-    // Apps installed or removed while Cutoff was in the background.
+    // Apps installed or removed while Ghalq was in the background.
     LifecycleEventEffect(Lifecycle.Event.ON_RESUME) { vm.refreshApps() }
 
     val onPower: () -> Unit = {
@@ -346,7 +346,7 @@ private fun AppRow(
     repository: AppRepository,
     onToggle: () -> Unit,
     first: Boolean,
-    tokens: CutoffColors,
+    tokens: GhalqColors,
 ) {
     val t = tokens
     val sizePx = with(LocalDensity.current) { 40.dp.roundToPx() }

@@ -1,4 +1,4 @@
-package com.martdean.cutoff.data
+package com.martdean.ghalq.data
 
 import android.Manifest
 import android.content.Context
@@ -25,7 +25,7 @@ class AppRepository(context: Context) {
     private val selfPackage = context.packageName
     private val icons = LruCache<String, ImageBitmap>(256)
 
-    /** Every app with a launcher icon, except Cutoff itself, sorted by name. */
+    /** Every app with a launcher icon, except Ghalq itself, sorted by name. */
     suspend fun loadApps(): List<AppInfo> = withContext(Dispatchers.IO) {
         val launcher = Intent(Intent.ACTION_MAIN).addCategory(Intent.CATEGORY_LAUNCHER)
         val collator = Collator.getInstance()

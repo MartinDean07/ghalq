@@ -1,1 +1,1 @@
-# Cutoff has no reflection-based code; default rules are enough.
+# Ghalq has no reflection-based code; default rules are enough.

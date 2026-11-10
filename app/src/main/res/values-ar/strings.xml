@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Cutoff</string>
+    <string name="app_name">غلق</string>
     <string name="title">افصل التطبيقات عن الإنترنت</string>
     <string name="subtitle">اختر التطبيقات التي يجب أن تبقى دون اتصال، وستعمل بقية التطبيقات كالمعتاد.</string>
     <string name="status_on">الحظر مفعّل</string>
@@ -14,7 +14,7 @@
     <string name="state_blocked">مفصول</string>
     <string name="state_allowed">مسموح</string>
     <string name="row_cut_off">دون اتصال الآن</string>
-    <string name="row_will_cut">يُفصل عند تشغيل Cutoff</string>
+    <string name="row_will_cut">يُفصل عند تشغيل «غلق»</string>
     <string name="row_no_internet">لا يستخدم الإنترنت</string>
     <string name="footer_pick">اختر التطبيقات التي تريد فصلها</string>
     <string name="footer_on_sub">اضغط لإعادة الإنترنت إليها</string>
@@ -24,16 +24,16 @@
     <string name="cd_about">حول التطبيق ونصائح</string>
     <string name="cd_clear">مسح البحث</string>
     <string name="toast_pick_first">اختر تطبيقًا واحدًا على الأقل أولًا</string>
-    <string name="toast_consent_denied">يحتاج Cutoff إلى إذن VPN ليحظر التطبيقات. لا يُرسل أي شيء إلى أي مكان.</string>
-    <string name="about_title">كيف يعمل Cutoff</string>
-    <string name="about_body">يشغّل Cutoff شبكة VPN محلية لا يمر عبرها إلا التطبيقات التي تختارها، ولا يمرّر بياناتها إلى أي مكان. لذلك تفقد هذه التطبيقات الاتصال بالإنترنت، بينما تستخدم بقية التطبيقات اتصالك العادي.</string>
+    <string name="toast_consent_denied">يحتاج «غلق» إلى إذن VPN ليحظر التطبيقات. لا يُرسل أي شيء إلى أي مكان.</string>
+    <string name="about_title">كيف يعمل «غلق»</string>
+    <string name="about_body">يشغّل «غلق» شبكة VPN محلية لا يمر عبرها إلا التطبيقات التي تختارها، ولا يمرّر بياناتها إلى أي مكان. لذلك تفقد هذه التطبيقات الاتصال بالإنترنت، بينما تستخدم بقية التطبيقات اتصالك العادي.</string>
     <string name="about_tips">نصائح</string>
-    <string name="tip_tile">أضف مربع Cutoff إلى الإعدادات السريعة لتشغيل الحظر أو إيقافه بلمسة واحدة.</string>
-    <string name="tip_always_on">ليبقى الحظر بعد إعادة التشغيل، فعّل «شبكة VPN قيد التشغيل دائمًا» لتطبيق Cutoff من إعدادات VPN.</string>
-    <string name="tip_one_vpn">يسمح أندرويد بشبكة VPN واحدة فقط في الوقت نفسه، وتشغيل VPN آخر يوقف Cutoff.</string>
+    <string name="tip_tile">أضف مربع «غلق» إلى الإعدادات السريعة لتشغيل الحظر أو إيقافه بلمسة واحدة.</string>
+    <string name="tip_always_on">ليبقى الحظر بعد إعادة التشغيل، فعّل «شبكة VPN قيد التشغيل دائمًا» لتطبيق «غلق» من إعدادات VPN.</string>
+    <string name="tip_one_vpn">يسمح أندرويد بشبكة VPN واحدة فقط في الوقت نفسه، وتشغيل VPN آخر يوقف «غلق».</string>
     <string name="open_vpn_settings">فتح إعدادات VPN</string>
-    <string name="privacy_note">الخصوصية أولًا: لا يملك Cutoff إذن الوصول إلى الإنترنت، ولا يحتاج إلى حساب، ولا يجمع إحصاءات، ولا يتصل بأي خادم. تبقى اختياراتك على هذا الهاتف.</string>
-    <string name="credit">Cutoff · تصميم وتطوير مارتن دين</string>
+    <string name="privacy_note">الخصوصية أولًا: لا يملك «غلق» إذن الوصول إلى الإنترنت، ولا يحتاج إلى حساب، ولا يجمع إحصاءات، ولا يتصل بأي خادم. تبقى اختياراتك على هذا الهاتف.</string>
+    <string name="credit">غلق · تصميم وتطوير مارتن دين</string>
     <plurals name="tile_on">
         <item quantity="zero">%1$s تطبيق مفصول</item>
         <item quantity="one">تطبيق واحد مفصول</item>
