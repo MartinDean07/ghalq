@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cutoff</string>
+    <string name="title">Cut apps off the internet</string>
+    <string name="subtitle">Pick the apps that should stay offline. Everything else keeps working.</string>
+    <string name="status_on">Blocking</string>
+    <string name="status_off">Off</string>
+    <string name="search_hint">Search apps</string>
+    <string name="filter_all">All apps</string>
+    <string name="filter_blocked">Cut off · %1$s</string>
+    <string name="loading">Loading your apps…</string>
+    <string name="empty_blocked">No apps cut off yet. Flip a switch in All apps.</string>
+    <string name="empty_search">No app matches that search.</string>
+    <string name="state_blocked">Cut off</string>
+    <string name="state_allowed">Allowed</string>
+    <string name="row_cut_off">Offline now</string>
+    <string name="row_will_cut">Goes offline when Cutoff is on</string>
+    <string name="row_no_internet">Doesn\'t use the internet</string>
+    <string name="footer_pick">Pick apps to cut off</string>
+    <string name="footer_on_sub">Tap to restore their internet</string>
+    <string name="footer_off_sub">Tap to start blocking</string>
+    <string name="cd_turn_on">Start blocking</string>
+    <string name="cd_turn_off">Stop blocking</string>
+    <string name="cd_about">About and tips</string>
+    <string name="cd_clear">Clear search</string>
+    <string name="toast_pick_first">Pick at least one app first</string>
+    <string name="toast_consent_denied">Cutoff needs VPN permission to block apps. Nothing is sent anywhere.</string>
+    <string name="about_title">How Cutoff works</string>
+    <string name="about_body">Cutoff starts a local VPN that only the apps you pick are routed into. It never forwards their traffic, so those apps lose internet while every other app uses your normal connection.</string>
+    <string name="about_tips">Tips</string>
+    <string name="tip_tile">Add the Cutoff tile to Quick Settings to switch blocking on or off in one tap.</string>
+    <string name="tip_always_on">To keep blocking after a restart, turn on Always-on VPN for Cutoff in VPN settings.</string>
+    <string name="tip_one_vpn">Android allows one VPN at a time. Starting another VPN switches Cutoff off.</string>
+    <string name="open_vpn_settings">Open VPN settings</string>
+    <string name="privacy_note">Private by design: Cutoff has no internet permission, no account, no analytics and no server. Your choices stay on this phone.</string>
+    <string name="credit">Cutoff · designed and built by Martin Dean</string>
+    <plurals name="tile_on">
+        <item quantity="one">%1$s app off</item>
+        <item quantity="other">%1$s apps off</item>
+    </plurals>
+    <plurals name="attempts_blocked">
+        <item quantity="one">%1$s attempt blocked</item>
+        <item quantity="other">%1$s attempts blocked</item>
+    </plurals>
+    <plurals name="footer_on">
+        <item quantity="one">%1$s app is offline</item>
+        <item quantity="other">%1$s apps are offline</item>
+    </plurals>
+    <plurals name="footer_ready">
+        <item quantity="one">%1$s app selected</item>
+        <item quantity="other">%1$s apps selected</item>
+    </plurals>
+    <plurals name="footer_attempts">
+        <item quantity="one">%1$s connection blocked</item>
+        <item quantity="other">%1$s connections blocked</item>
+    </plurals>
+</resources>

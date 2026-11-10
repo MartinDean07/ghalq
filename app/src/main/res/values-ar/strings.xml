@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cutoff</string>
+    <string name="title">افصل التطبيقات عن الإنترنت</string>
+    <string name="subtitle">اختر التطبيقات التي يجب أن تبقى دون اتصال، وستعمل بقية التطبيقات كالمعتاد.</string>
+    <string name="status_on">الحظر مفعّل</string>
+    <string name="status_off">متوقف</string>
+    <string name="search_hint">ابحث عن تطبيق</string>
+    <string name="filter_all">كل التطبيقات</string>
+    <string name="filter_blocked">المفصولة · %1$s</string>
+    <string name="loading">جارٍ تحميل تطبيقاتك…</string>
+    <string name="empty_blocked">لم تفصل أي تطبيق بعد. فعّل المفتاح بجانب التطبيق في «كل التطبيقات».</string>
+    <string name="empty_search">لا يوجد تطبيق يطابق البحث.</string>
+    <string name="state_blocked">مفصول</string>
+    <string name="state_allowed">مسموح</string>
+    <string name="row_cut_off">دون اتصال الآن</string>
+    <string name="row_will_cut">يُفصل عند تشغيل Cutoff</string>
+    <string name="row_no_internet">لا يستخدم الإنترنت</string>
+    <string name="footer_pick">اختر التطبيقات التي تريد فصلها</string>
+    <string name="footer_on_sub">اضغط لإعادة الإنترنت إليها</string>
+    <string name="footer_off_sub">اضغط لبدء الحظر</string>
+    <string name="cd_turn_on">بدء الحظر</string>
+    <string name="cd_turn_off">إيقاف الحظر</string>
+    <string name="cd_about">حول التطبيق ونصائح</string>
+    <string name="cd_clear">مسح البحث</string>
+    <string name="toast_pick_first">اختر تطبيقًا واحدًا على الأقل أولًا</string>
+    <string name="toast_consent_denied">يحتاج Cutoff إلى إذن VPN ليحظر التطبيقات. لا يُرسل أي شيء إلى أي مكان.</string>
+    <string name="about_title">كيف يعمل Cutoff</string>
+    <string name="about_body">يشغّل Cutoff شبكة VPN محلية لا يمر عبرها إلا التطبيقات التي تختارها، ولا يمرّر بياناتها إلى أي مكان. لذلك تفقد هذه التطبيقات الاتصال بالإنترنت، بينما تستخدم بقية التطبيقات اتصالك العادي.</string>
+    <string name="about_tips">نصائح</string>
+    <string name="tip_tile">أضف مربع Cutoff إلى الإعدادات السريعة لتشغيل الحظر أو إيقافه بلمسة واحدة.</string>
+    <string name="tip_always_on">ليبقى الحظر بعد إعادة التشغيل، فعّل «شبكة VPN قيد التشغيل دائمًا» لتطبيق Cutoff من إعدادات VPN.</string>
+    <string name="tip_one_vpn">يسمح أندرويد بشبكة VPN واحدة فقط في الوقت نفسه، وتشغيل VPN آخر يوقف Cutoff.</string>
+    <string name="open_vpn_settings">فتح إعدادات VPN</string>
+    <string name="privacy_note">الخصوصية أولًا: لا يملك Cutoff إذن الوصول إلى الإنترنت، ولا يحتاج إلى حساب، ولا يجمع إحصاءات، ولا يتصل بأي خادم. تبقى اختياراتك على هذا الهاتف.</string>
+    <string name="credit">Cutoff · تصميم وتطوير مارتن دين</string>
+    <plurals name="tile_on">
+        <item quantity="zero">%1$s تطبيق مفصول</item>
+        <item quantity="one">تطبيق واحد مفصول</item>
+        <item quantity="two">تطبيقان مفصولان</item>
+        <item quantity="few">%1$s تطبيقات مفصولة</item>
+        <item quantity="many">%1$s تطبيقًا مفصولًا</item>
+        <item quantity="other">%1$s تطبيق مفصول</item>
+    </plurals>
+    <plurals name="attempts_blocked">
+        <item quantity="zero">حُظرت %1$s محاولة</item>
+        <item quantity="one">حُظرت محاولة واحدة</item>
+        <item quantity="two">حُظرت محاولتان</item>
+        <item quantity="few">حُظرت %1$s محاولات</item>
+        <item quantity="many">حُظرت %1$s محاولة</item>
+        <item quantity="other">حُظرت %1$s محاولة</item>
+    </plurals>
+    <plurals name="footer_on">
+        <item quantity="zero">%1$s تطبيق دون اتصال</item>
+        <item quantity="one">تطبيق واحد دون اتصال</item>
+        <item quantity="two">تطبيقان دون اتصال</item>
+        <item quantity="few">%1$s تطبيقات دون اتصال</item>
+        <item quantity="many">%1$s تطبيقًا دون اتصال</item>
+        <item quantity="other">%1$s تطبيق دون اتصال</item>
+    </plurals>
+    <plurals name="footer_ready">
+        <item quantity="zero">اخترت %1$s تطبيق</item>
+        <item quantity="one">اخترت تطبيقًا واحدًا</item>
+        <item quantity="two">اخترت تطبيقين</item>
+        <item quantity="few">اخترت %1$s تطبيقات</item>
+        <item quantity="many">اخترت %1$s تطبيقًا</item>
+        <item quantity="other">اخترت %1$s تطبيق</item>
+    </plurals>
+    <plurals name="footer_attempts">
+        <item quantity="zero">حُظر %1$s اتصال</item>
+        <item quantity="one">حُظر اتصال واحد</item>
+        <item quantity="two">حُظر اتصالان</item>
+        <item quantity="few">حُظرت %1$s اتصالات</item>
+        <item quantity="many">حُظر %1$s اتصالًا</item>
+        <item quantity="other">حُظر %1$s اتصال</item>
+    </plurals>
+</resources>
